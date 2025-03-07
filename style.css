@@ -1,0 +1,186 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column; /*top to bottom*/
+    
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 60px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures space between elements */
+    background: white;
+    z-index: 1000;/* Ensures it stays above other content */
+    
+}
+
+#img1{
+    max-width: 10%;
+    object-fit: cover;
+    margin-right:50px;
+}
+#underline{
+    color: black;
+    text-decoration: none;
+    margin-right:30px;
+    
+}
+.container{
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+    transform: translate(-30px);
+}
+#search1{
+    border-radius: 70px;
+    width: 300px; /* Adjust width as needed */
+    height: 40px; /* Optional: Adjust height */
+    padding: 5px; /* Adds inner spacing */
+    font-size: 16px; /* Increases text size */
+    text-align: center;
+    color: rgb(8, 8, 91);
+    border-color: blue;
+}
+#btn1{
+    border-radius: 5px;
+    background-color: white;
+    color: blue;
+    border-color: blue;    
+    width: 90px;
+    font-size: 17px;
+    
+}
+#btn1:hover{
+    background-color: darkblue;
+    color: white;
+
+}
+#btn2{
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    border-color: blue;    
+    width: 140px;
+    font-size: 17px;
+}
+#btn2:hover{
+    background-color: rgb(12, 12, 118);
+    color: white;
+
+}
+main{
+    background-color: rgb(28, 28, 84);
+    color: white;
+    width: 100%;
+    margin-top: 60px;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    position: relative;
+    padding-left: 200px;
+}
+#img2{
+    float: right;
+    display: block;
+}
+.section{
+    position: relative;
+    display: flex;
+    left:0;
+    bottom: 0;
+    margin-top: 30px;
+}
+a{
+    color:aquamarine;
+    margin-right: 10px;
+}
+#a1{
+    color: white;
+}
+h1{
+    margin-bottom: 5px;
+    margin-top: 40px;
+}
+#p1{
+    margin-top: 5px;
+    font-size: small;
+}
+#star span{
+    color:chartreuse;
+    filter: brightness(1.5);
+}
+#num1{
+    color: white;
+}
+#btn3{
+    margin-top: 20px;
+    height: 35px;
+    width: 140px;
+    color: black;
+    background-color:chartreuse ;
+
+}
+#btn4{
+    margin-top: 20px;
+    height: 35px;
+    width: 140px;
+    color: aquamarine;
+    background-color:transparent ;
+    border-color: aquamarine;
+
+}
+#root{
+    width: 400px;
+}
+
+table{
+    width: 100%;
+    border-spacing: 1px;
+}
+td{
+    border: 1px solid grey;
+    padding:10px;
+    text-align: center;
+}
+
+#skill,#skill1{
+    display: flex;
+    justify-content: flex-start;
+    
+    align-items: center;
+    text-align: left;
+    position: relative;
+    padding-left: 200px;
+}
+.tag-container,.foot1{
+    display: flex;
+    justify-content: flex-start;
+    
+    align-items: center;
+    text-align: left;
+    position: relative;
+    padding-left: 200px;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-right: 200px;
+}
+.tag {
+    display: inline-flex;
+    border: 2px solid grey; /* Light blue-gray border */
+    border-radius: 20px; /* Rounded shape */
+    padding: 8px 10px; /* Space inside */
+    font-size: 14px; /* Adjust text size */
+    color: black; /* Text color */
+    background: #F8FAFD; /* Light background */
+    font-weight: 500; /* Slightly bold */
+}
+.tag-container a{
+    color:navy;
+}

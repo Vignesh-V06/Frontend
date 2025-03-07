@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Udacity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="https://th.bing.com/th/id/OIP.coDRhb-n7qc5GaEwJsYeLQHaBx?w=333&h=83&c=7&r=0&o=5&dpr=1.4&pid=1.7"
+            id="img1">
+        <a href="#" id="underline">Learn</a>
+        <a href="#" id="underline">Catalog</a>
+        <a href="#" id="underline">Individuals</a>
+        <a href="#" id="underline">Business</a>
+        <a href="#" id="underline">Government</a>
+        <div class="container">
+            <input type="search" value="what course do you need?" id="search1">
+            <input type="button" value="Log In" id="btn1">
+            <input type="button" value="Join For Free" id="btn2">
+        </div>
+    </header>
+    <main>
+        <img src="baground.png" id="img2">
+        <div class="section">
+            <a href="#">All Programs ></a>
+            <a href="#">Schools of Artificial Intelligence ></a>
+            <a id="a1">Generative AI</a>
+        </div>
+        <h1>Generative AI</h1>
+        <p id="p1">Nanodegree Program</p>
+        <p id="star">
+            <span>⭐⭐⭐⭐⭐</span>
+            <a href="#" id="num1">(11)</a>
+        </p>
+        <p id="root">Embark on a transformative journey into Generative AI! We'll start by diving into the essentials
+            with an
+            introductory course, progress to mastering text generation with Large Language Models, unravel the
+            complexities of image creation in computer vision and cap it off by bringing AI to...</p>
+        <a style="text-decoration: underline; color:aqua;" id="read">Read More</a><br>
+        <input type="button" id="btn3" value="Enroll Now  ->" onclick="alertpopup()">
+        <input type="button" id="btn4" value="Download Syllabus" onclick="downloadalert()">
+    </main>
+    <footer>
+        <table class="table">
+            <tr>
+                <td>Intermediate</td>
+                <td>2 months</td>
+                <td>Last Updated March 6,2025</td>
+            </tr>
+        </table>
+        <div class="wrapper">
+            <h4 id="skill">Skills you'll learn:</h4>
+            <div class="tag-container">
+                <div class="tag">Vectors</div>
+                <div class="tag">Retrieval-Augmented Generation</div>
+                <div class="tag">OpenAI API</div>
+                <div class="tag">LangChain</div>
+                <div class="tag">Image pre-processing</div>
+                <div class="tag">Transfer learning</div>
+                <div class="tag">Word embeddings</div>
+                <div class="tag">Ethical AI</div>
+                <div class="tag">Diffusion Models</div>
+                <a href="#" id="num2">+37 More</a>
+            </div>
+            <h4 id="skill1">Prerequisites:</h4>
+            <div class="foot1">
+                <div class="tag">Database fundamentals</div>
+                <div class="tag">Intermediate Python</div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function alertpopup() {
+            window.alert("You have successfully enrolled in the Generative AI Nanodegree Program!");
+        }
+        function downloadalert() {
+            alert("Resource downloaded succesfully...");
+        }
+        const val = document.getElementById("root");
+        const read = document.getElementById("read");
+        read.addEventListener("click", removeRead);
+        function removeRead() {
+            read.remove();
+            val.innerHTML = "Embark on a transformative journey into Generative AI! We'll start by diving into the essentials with an introductory course, progress to mastering text generation with Large Language Models, unravel the complexities of image creation in computer vision and cap it off by bringing AI to life in real-world applications. From foundational theories to building sophisticated chatbots and AI agents, this program will empower you with job-ready skills in the exciting field of Generative AI.";
+        }
+    </script>
+</body>
+
+</html>
